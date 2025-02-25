@@ -7,7 +7,7 @@ Google Sheets allows you to create your own custom functions using **Google Apps
 2. Click on **Extensions** in the top menu.
 3. Select **Apps Script** from the dropdown.
 
-## Step 2: Write Your Function
+## Step 2: Write Your Function (javascript)
 1. In the Apps Script editor, you'll see a default `myFunction` code.
 2. Replace the default code with your custom function or create from scratch however many custom functions as you like. For example:
 
