@@ -12,7 +12,7 @@ Google Sheets allows you to create your own custom functions using **Google Apps
 2. Replace the default code with your custom function or create from scratch however many custom functions as you like. For example:
 
 ```javascript
-// This is a function that scrape data (coresponding stock market price) from Yahoo Finance utilizing regular expression (regex). 
+// This is a function that scrape data (stock market price) from Yahoo Finance utilizing regular expression (regex). 
 function scrapeStockMarketPrice(ticker) {
   if (!ticker) {
     ticker = '^KLSE';
