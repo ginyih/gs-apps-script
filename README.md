@@ -55,16 +55,5 @@ function scrapeStockMarketPrice(ticker) {
 1. Your custom function will now work just like any built-in function.
 2. You can modify the script in the Apps Script editor to enhance or change the function's behavior.
 
-### Example: Custom Function for Concatenation
-
-```javascript
-function concatStrings(str1, str2) {
-  return str1 + " " + str2;
-}
-```
-Use it in Google Sheets like:
-```plaintext
-=concatStrings(A1, B1)
-```
 That's it! You’ve created a custom function for Google Sheets using Google Apps Script.
 Feel free to adjust the example or steps to fit your specific use case!
