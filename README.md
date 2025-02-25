@@ -50,7 +50,6 @@ function scrapeStockMarketPrice(ticker) {
 ```plaintext
 =scrapeStockMarketPrice("^KLSE")
 ```
-Where A1 is the cell you want to apply the function to.
 
 ## Step 4: Enjoy Your Custom Function
 1. Your custom function will now work just like any built-in function.
