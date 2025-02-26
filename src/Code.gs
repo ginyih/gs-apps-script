@@ -1,4 +1,5 @@
-function getMalaysiaStock(ticker) {
+// This is a function that scrape data (stock market price) from Yahoo Finance utilizing regular expression (regex). 
+function scrapeStockMarketPrice(ticker) {
 	if (!ticker) {
 		ticker = '1023.KL';
 	}
