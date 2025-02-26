@@ -1,61 +1,45 @@
 # Here you will find various Google Sheet Custom Functions (App Scripts)
 
-# How to Create a Custom Function in Google Sheets
+## Getting Started with Google Sheets Apps Script
 
-Google Sheets allows you to create your own custom functions using **Google Apps Script**. Follow the steps below to create one:
+Google Sheets allows you to extend its functionality using Google Apps Script. You can create custom functions, automate tasks, and interact with other Google services. Here's a simple guide to get you started with creating a custom function in Google Sheets.
 
-## Step 1: Open Script Editor
-1. Open your Google Sheet.
-2. Click on **Extensions** in the top menu.
-3. Select **Apps Script** from the dropdown.
+### Step 1: Open Google Sheets
 
-## Step 2: Write Your Function(s) (javascript) under Code.js
-1. In the Apps Script editor, you'll see a default `myFunction` code.
-2. Replace the default code with your custom function or create from scratch however many custom functions as you like. For example:
+1. Go to [Google Sheets](https://sheets.google.com) and open a new or existing spreadsheet.
+
+### Step 2: Open the Script Editor
+
+1. In the Google Sheets menu, click on `Extensions`.
+2. Select `Apps Script`. This will open the Apps Script editor where you can write your custom scripts.
+
+### Step 3: Create a Custom Function
+
+1. In the Apps Script editor, you'll see a default script file named `Code.gs`.
+2. Delete any existing code and create a new function. Here's an example of a custom function that adds two numbers:
 
 ```javascript
-// This is a function that scrape data (stock market price) from Yahoo Finance utilizing regular expression (regex). 
-function scrapeStockMarketPrice(ticker) {
-  if (!ticker) {
-    ticker = '^KLSE';
-  }
-
-  // Encode the ticker symbol to handle special characters
-  var encodedTicker = encodeURIComponent(ticker);
-
-  // URL of the Yahoo Finance page for Apple (AAPL)
-  var url = `https://finance.yahoo.com/quote/${encodedTicker}`;
-  Logger.log('Fetching data from URL: ' + url);
-
-  // Fetch the HTML content of the page
-  var response = UrlFetchApp.fetch(url);
-  var html = response.getContentText();
-
-  // Use a regular expression to extract the stock price from the HTML
-  var regex = /<span\s+class="base\s+yf-ipw1h0"\s+data-testid="qsp-price">([\d,\.]+)\s*<\/span>/;
-  var match = html.match(regex);
-
-  // If a match is found, extract and log the stock price
-  if (match) {
-    var stockPrice = match[1];
-    Logger.log(`The current stock price of ${ticker} is: $` + stockPrice);
-    return stockPrice
-  }
+function ADD_NUMBERS(num1, num2) {
+  return num1 + num2;
 }
 ```
 
-## Step 3: Apply Your Custom Function(s)
-1. Go back to your Google Sheet.
-2. In any cell, enter your custom function as you would with any built-in function.
-3. Example below, we want to fetch the market price of KLSE Bursa Malaysia "^KLSE" is the ticker. Ensure the ticker correspond with the stock you want to fetch by searching [here](https://finance.yahoo.com/).
+### Step 4: Use the Custom Function in Google Sheets
 
+1. Go back to your Google Sheets spreadsheet.
+2. In any cell, you can now use your custom function just like a built-in function:
 ```plaintext
-=scrapeStockMarketPrice("^KLSE")
+=ADD_NUMBERS(5, 7)
 ```
+This will return `12`, as the function adds the two numbers you provided.
 
-## Step 4: Enjoy Your Custom Function
-1. Your custom function will now work just like any built-in function.
-2. You can modify the script in the Apps Script editor to enhance or change the function's behavior.
+### Step 5: Save and Close
 
-That's it! You’ve created a custom function for Google Sheets using Google Apps Script.
-Feel free to adjust the example or steps to fit your specific use case!
+1. When you're done, click `File > Save`, and you can close the Apps Script editor. Your custom function will be available for use in your Google Sheets.
+2. In any cell, you can now use your custom function just like a built-in function:
+
+#### Troubleshooting Tips:
+1. **Function not recognized**: If your function isn't showing up in Google Sheets, make sure you saved the script and that there are no errors in the code.
+2. **Permissions**: Some scripts may require you to authorize the script to run. If prompted, follow the on-screen instructions to grant permissions.
+
+Congratulations! You've just created and used your first custom function in Google Sheets with Apps Script.
