@@ -57,4 +57,7 @@
    - Click `File > Save` or press `Ctrl + S` to save your code.
 
 ## Execute Your Script:
-   - Back in your Google Sheet, in any cell, type/apply `=YAHOO_FINANCE(x, x)` .
+   - Back in your Google Sheet, in any cell, type/apply `=CUSTOM_FUNCTION(...)` to start using the function(s) you copied to your Apps Script editor.
+   - In the case of above example: 
+      - `=YAHOO_FINANCE("^KLSE", "price")` will return the current market price of Bursa Malaysia in the applied cell (1,583.24) at this time of writing.
+      - `=YAHOO_FINANCE("^KLSE", "header")` will return the name of Bursa Malaysia in the applied cell (FTSE Bursa Malaysia KLCI) at this time of writing.
