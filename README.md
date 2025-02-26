@@ -33,4 +33,6 @@ This will return `12`, as the function adds the two numbers you provided.
 1. **Function not recognized**: If your function isn't showing up in Google Sheets, make sure you saved the script and that there are no errors in the code.
 2. **Permissions**: Some scripts may require you to authorize the script to run. If prompted, follow the on-screen instructions to grant permissions.
 
+---
+
 Congratulations! You've just created and used your first custom function in Google Sheets with Apps Script.
