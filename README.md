@@ -29,7 +29,7 @@ This will return `12`, as the function adds the two numbers you provided.
 1. When you're done, click `File > Save`, and you can close the Apps Script editor. Your custom function will be available for use in your Google Sheets.
 2. In any cell, you can now use your custom function just like a built-in function:
 
-### Troubleshooting Tips:
+## Troubleshooting Tips:
 1. **Function not recognized**: If your function isn't showing up in Google Sheets, make sure you saved the script and that there are no errors in the code.
 2. **Permissions**: Some scripts may require you to authorize the script to run. If prompted, follow the on-screen instructions to grant permissions.
 
