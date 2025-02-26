@@ -13,7 +13,7 @@ Google Sheets allows you to extend its functionality using Google Apps Script. Y
 2. Delete any existing code and create a new function. Here's an example of a custom function that adds two numbers:
 ```javascript
 function ADD_NUMBERS(num1, num2) {
-  return num1 + num2;
+    return num1 + num2;
 }
 ```
 
