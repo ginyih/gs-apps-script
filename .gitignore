@@ -1,0 +1,16 @@
+# clasp configuration file
+.clasp.json
+
+# Node.js dependencies (if using clasp with Node.js)
+node_modules/
+
+# Log files (if you generate logs during development)
+*.log
+
+# IDE/project files
+.vscode/
+.idea/
+
+# OS-specific files (macOS, Windows, etc.)
+.DS_Store        # macOS Finder system file
+Thumbs.db        # Windows thumbnail cache
