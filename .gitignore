@@ -1,13 +1,16 @@
-# clasp configuration file
+# clasp configuration file (contains scriptId and local project settings)
 .clasp.json
 
-# Node.js dependencies (if using clasp with Node.js)
+# Google Apps Script project metadata (this is specific to your Google project)
+appsscript.json
+
+# Node.js dependencies (if using clasp with Node.js or npm)
 node_modules/
 
 # Log files (if you generate logs during development)
 *.log
 
-# IDE/project files
+# IDE/project files (if using any IDE like VS Code or JetBrains)
 .vscode/
 .idea/
 
