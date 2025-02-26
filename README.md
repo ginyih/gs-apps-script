@@ -1,3 +1,5 @@
+# Here you will find various Google Sheet Custom Functions (App Scripts)
+
 # How to Create a Custom Function in Google Sheets
 
 Google Sheets allows you to create your own custom functions using **Google Apps Script**. Follow the steps below to create one:
