@@ -49,8 +49,8 @@
    }
    ```
    This function accepts 2 inputs as can see from the script above `YAHOO_FINANCE(x, x)`.
-   - The first input is the symbol ticker. Head to [Yahoo Finance](https://finance.yahoo.com/) to search for the ticker you want to scrape.
-   - The second input is optional ("price" or "header") and by default is set to "price" which means when running `YAHOO_FINANCE("^KLSE", "price")` will return the stock price. Alternatively, you can use "header" to return the stock name instead.
+   - The first input is the symbol ticker. Head to [Yahoo Finance](https://finance.yahoo.com/) to search for the ticker you need.
+   - The second input is optional ("price" or "name") and by default is set to "price" which means when running `YAHOO_FINANCE("^KLSE", "price")` will return the stock price. Alternatively, you can use "name" to return the stock name instead.
 
 ## Save Your Script:
    - Click `File > Save` or press `Ctrl + S` to save your code.
@@ -59,4 +59,4 @@
    - Back in your Google Sheet, in any cell, type/apply `=CUSTOM_FUNCTION(...)` to start using the function(s) you copied to your Apps Script editor.
    - In the case of above example: 
       - `=YAHOO_FINANCE("^KLSE", "price")` will return the current market price of Bursa Malaysia in the applied cell (1,583.24) at this time of writing.
-      - `=YAHOO_FINANCE("^KLSE", "header")` will return the name of Bursa Malaysia in the applied cell (FTSE Bursa Malaysia KLCI) at this time of writing.
+      - `=YAHOO_FINANCE("^KLSE", "name")` will return the name of Bursa Malaysia in the applied cell (FTSE Bursa Malaysia KLCI) at this time of writing.
